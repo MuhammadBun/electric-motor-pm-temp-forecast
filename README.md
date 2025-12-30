@@ -1,18 +1,32 @@
+## 📊 Results Preview
+
+![Predicted vs Actual PM Temperature](images/true_vs_pred.png)
+*Predicted vs Actual Permanent Magnet Temperature (Test Set)*
+
+![Prediction Error Distribution](images/MAE.png)
+*Prediction Error Distribution*
+
+---
+
 ## Project Overview
 
-This project focuses on **long-horizon forecasting of permanent magnet (PM) temperature** in electric motors using a **Long Short-Term Memory (LSTM)** neural network.  
-The goal is to accurately predict future thermal behavior based on historical electrical, mechanical, and thermal measurements, which is critical for **thermal safety, efficiency, and predictive control** in electric drive systems.
+This project focuses on **long-horizon forecasting of permanent magnet (PM) temperature** in electric motors using a **Long Short-Term Memory (LSTM)** neural network.
+
+The objective is to predict future thermal behavior from historical **electrical, mechanical, and thermal measurements**, enabling improved **thermal safety, efficiency, and predictive control** in electric drive systems.
 
 **Author:** Muhammad Ben Hamad  
 **Date:** 2025-12-23  
 **Framework:** TensorFlow / Keras  
 
-**Problem Definition:**  
-Predict the **PM temperature** at a **future horizon of 80 timesteps (≈ 40 s)** using a **lookback window of 120 timesteps (≈ 60 s)**.  
-The task is formulated as a **direct forecasting problem**, where the model outputs a single prediction at the target horizon (no recursive rollout).
+### Problem Definition
 
-**Deployment Target:**  
-NEV (New Energy Vehicle) motor temperature monitoring, fault prevention, and predictive thermal control.
+Predict the **PM temperature** at a **future horizon of 80 timesteps (≈ 40 seconds)** using a **lookback window of 120 timesteps (≈ 60 seconds)**.
+
+This is formulated as a **direct forecasting task**, where the model outputs a **single temperature prediction at the target horizon**, without recursive or multi-step rollout.
+
+### Deployment Target
+
+New Energy Vehicle (NEV) motor temperature monitoring, thermal fault prevention, and predictive thermal control.
 
 ---
 
@@ -22,7 +36,7 @@ This project uses the **Electric Motor Temperature Dataset** from Kaggle:
 
 https://www.kaggle.com/datasets/wkirgsn/electric-motor-temperature
 
-The dataset contains synchronized time-series measurements collected from a Permanent Magnet Synchronous Motor (PMSM) under varying operating conditions.
+The dataset contains synchronized multivariate time-series measurements collected from a **Permanent Magnet Synchronous Motor (PMSM)** operating under diverse load, speed, and thermal conditions.
 
 ### How to Use the Dataset
 
