@@ -46,3 +46,21 @@ The dataset contains synchronized multivariate time-series measurements collecte
 ```text
 pm_lstm_forecast.ipynb
 measures_v2.csv
+
+
+## Kaggle Notebook
+
+An interactive Kaggle implementation of this project is available at the link below.  
+
+It reproduces the **80 s lookback → 70 s forecast horizon** setup using the **ResNet–LSTM** architecture and includes full training, evaluation, and visualization of results.
+
+**Kaggle Notebook:**  
+https://www.kaggle.com/code/muhammadbenhamad/electric-motor-pm-temperature-forecast-resnet-lstm
+
+The Kaggle version provides:
+- End-to-end data preprocessing and sequence construction
+- ResNet–LSTM model definition and training
+- Quantitative evaluation (MAE, RMSE, R²)
+- Visual comparison of predicted vs. true PM temperature over multiple operating ranges
+
+ 
