@@ -5,9 +5,6 @@ __pycache__/
 
 *.csv
 
-*.h5
-*.keras
-
-
+ 
 .DS_Store
 Thumbs.db
