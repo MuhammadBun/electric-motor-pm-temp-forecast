@@ -1,4 +1,4 @@
-## 📊 Results Preview
+## Results Preview
 
 ![Predicted vs Actual PM Temperature](images/true_vs_pred.png)
 *Predicted vs Actual Permanent Magnet Temperature (Test Set)*
